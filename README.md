@@ -2,6 +2,8 @@
 
 ## Program Architecture
 
-![Complete program architecture](docs/architecture.png)
+<p align="center">
+  <img src="docs/architecture.png" alt="Complete program architecture" width="90%">
+</p>
 
 [Open or download the complete architecture diagram as PDF](docs/architecture.pdf)
