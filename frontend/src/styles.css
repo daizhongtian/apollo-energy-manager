@@ -1,0 +1,35 @@
+:root { font-family: Arial, sans-serif; color: #22332a; background: #f4f6f4; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input, select { font: inherit; }
+button { border: 0; border-radius: 6px; padding: 10px 14px; background: #246b48; color: white; cursor: pointer; }
+button:disabled { opacity: .6; }
+input, select { border: 1px solid #cbd5ce; border-radius: 6px; padding: 10px; background: white; }
+label { display: grid; gap: 6px; font-weight: 600; }
+a { color: #246b48; }
+h1, h2 { margin-top: 0; }
+.auth-page { min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+.card { background: white; border: 1px solid #dde4df; border-radius: 8px; padding: 24px; }
+.auth-form { width: 100%; max-width: 390px; display: grid; gap: 16px; }
+.auth-form p { margin: 0; }
+.container { max-width: 1100px; margin: auto; padding: 32px 20px; }
+header, .section-title { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+header { margin-bottom: 24px; }
+header p { margin: 0; color: #67736c; }
+.columns { display: grid; grid-template-columns: 320px 1fr; gap: 20px; }
+.row-form { display: flex; gap: 8px; margin-bottom: 20px; }
+.row-form input { flex: 1; min-width: 0; }
+.list { display: grid; gap: 8px; }
+.list-button { width: 100%; display: flex; justify-content: space-between; text-align: left; background: #eef3ef; color: #22332a; }
+.list-button.active { background: #d3e7da; }
+small { display: block; color: #6e7d74; font-weight: normal; }
+.task-row { display: grid; grid-template-columns: 1fr 130px auto; align-items: center; gap: 10px; padding: 10px; border: 1px solid #e0e5e1; border-radius: 6px; }
+.secondary { background: #e6ece8; color: #294637; }
+.danger { background: #a7433f; }
+.section-title > div { display: flex; gap: 8px; }
+.error { color: #9b302e; background: #ffebea; padding: 10px; border-radius: 6px; }
+@media (max-width: 760px) {
+  .columns { grid-template-columns: 1fr; }
+  .row-form, .section-title { align-items: stretch; flex-direction: column; }
+  .task-row { grid-template-columns: 1fr; }
+}
